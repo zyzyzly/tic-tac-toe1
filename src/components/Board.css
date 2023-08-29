@@ -1,19 +1,6 @@
 .board {
   display: grid;
-  grid-template-columns: repeat(3, minmax(80px, 1fr)); /* Responsive columns */
-  grid-template-rows: repeat(3, minmax(80px, 1fr)); /* Responsive rows */
-  gap: 4px; /* Adjust spacing */
+  grid-template-columns: repeat(3, 6rem);
   place-items: center;
   justify-content: center;
-  max-width: 400px; /* Set a maximum width for the board */
-  margin: 0 auto; /* Center the board horizontally */
-}
-
-@media (max-width: 768px) {
-  /* For screens up to 768px width */
-  .board {
-    grid-template-columns: repeat(3, 4rem); /* Adjust box size */
-    gap: 0.3rem; /* Adjust spacing */
-    max-width: 300px; /* Adjust maximum width */
-  }
 }
