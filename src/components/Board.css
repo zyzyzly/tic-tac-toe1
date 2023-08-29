@@ -1,7 +1,8 @@
 .board {
   display: grid;
-  grid-template-columns: repeat(3, 6rem);
-  gap: 0.5rem; /* Add some spacing between boxes */
+  grid-template-columns: repeat(3, minmax(80px, 1fr)); /* Responsive columns */
+  grid-template-rows: repeat(3, minmax(80px, 1fr)); /* Responsive rows */
+  gap: 4px; /* Adjust spacing */
   place-items: center;
   justify-content: center;
   max-width: 400px; /* Set a maximum width for the board */
